@@ -29,7 +29,9 @@ const mapStateToProps = state => ({
   state1: state.state1
 })
 
-const mapDispatchToProps = { action1 }
+const mapDispatchToProps = dispatch => ({
+  action1: data => dispatch(action1(data))
+})
 
 export default connect(
   mapStateToProps,
