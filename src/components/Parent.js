@@ -3,9 +3,9 @@ import Child from './Child'
 
 const Parent = () => {
   return (
-    <div>
+    <div style={{padding: '16px', width: '600px', backgroundColor: '#999'}}>
       <p>Parent</p>
-      <Child message={'Data passed from parent.'}/>
+      <Child parentData={'Data passed from parent.'}/>
     </div>
   )
 }
